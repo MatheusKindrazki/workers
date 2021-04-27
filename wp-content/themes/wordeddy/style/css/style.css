@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #000000;
+  background-color: #cccccc;
+  border: 1px solid  #cccccc;
+  border-radius: 4px;
+}
+
+a, button {
+  cursor: pointer !important;
+  outline: none !important;
+}
+
+.front-page {
+  height: auto;
+}
+.front-page .banner-home {
+  position: relative;
+  height: 100vh;
+}
+.front-page .banner-home video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.front-page .banner-home h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 5.3125rem;
+  color: #ffffff;
+}
