@@ -5,6 +5,7 @@ body
 	font-size: $font-size
 	text-rendering: optimizeLegibility !important
 	-webkit-font-smoothing: antialiased !important
+	font-family: 'Poppins', sans-serif
 
 pre
 	display: block
@@ -16,10 +17,20 @@ pre
 	word-wrap: break-word
 	color: #000000
 	background-color: #cccccc
-	border: 1px solid #cccccc
+	border: 1px solid #664545
 	border-radius: 4px
 
 
 a, button
 	cursor: pointer !important
 	outline: none !important
+
+.title-2
+	font-family: 'Poppins', sans-serif
+	font-weight: 200
+	font-size: calculateRem(60px)
+	color: $black
+	display: block
+	margin-bottom: 80px
+	&.white
+		color: $white

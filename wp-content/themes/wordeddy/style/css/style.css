@@ -6,6 +6,7 @@ body {
   font-size: 16px;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  font-family: "Poppins", sans-serif;
 }
 
 pre {
@@ -18,7 +19,7 @@ pre {
   word-wrap: break-word;
   color: #000000;
   background-color: #cccccc;
-  border: 1px solid  #cccccc;
+  border: 1px solid  #664545;
   border-radius: 4px;
 }
 
@@ -27,12 +28,21 @@ a, button {
   outline: none !important;
 }
 
-.front-page {
-  height: auto;
+.title-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 3.75rem;
+  color: #000000;
+  display: block;
+  margin-bottom: 80px;
 }
+.title-2.white {
+  color: #ffffff;
+}
+
 .front-page .banner-home {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .front-page .banner-home video {
   position: absolute;
@@ -47,4 +57,78 @@ a, button {
   font-weight: 300;
   font-size: 5.3125rem;
   color: #ffffff;
+}
+.front-page .contruir-marcas {
+  min-height: 100vh;
+  padding-top: 130px;
+}
+.front-page .contruir-marcas .area-imagens {
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 10;
+}
+.front-page .contruir-marcas .area-imagens .title-image-left, .front-page .contruir-marcas .area-imagens .title-image-right {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.front-page .contruir-marcas .area-imagens .title-image-left {
+  position: absolute;
+  left: -105px;
+  top: 100px;
+  z-index: 10;
+  transform: rotate(-90deg);
+}
+.front-page .contruir-marcas .area-imagens .title-image-right {
+  position: absolute;
+  right: -105px;
+  top: 100px;
+  z-index: 10;
+  transform: rotate(90deg);
+}
+.front-page .contruir-marcas .area-imagens .img-back {
+  width: 50%;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.front-page .integrar {
+  min-height: 100vh;
+  background: #2c2e3a;
+  position: relative;
+}
+.front-page .integrar .produtos {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -280px;
+  z-index: 10;
+}
+.front-page .integrar .produtos .title-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.front-page .integrar .produtos .title-item h3 {
+  font-weight: 200;
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+.front-page .integrar .produtos .title-item p {
+  color: #5f5f5f;
+  font-size: 10rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  line-height: 6.25rem;
+}
+.front-page .integrar .produtos .img-produto {
+  width: 100%;
+  display: block;
+  height: 340px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

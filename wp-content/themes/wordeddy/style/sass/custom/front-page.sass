@@ -1,8 +1,7 @@
 .front-page
-  height: auto
   .banner-home
     position: relative
-    height: 100vh
+    min-height: 100vh
     video
       position: absolute
       right: 0
@@ -15,3 +14,66 @@
       font-weight: 300
       font-size: calculateRem(85px)
       color: $white
+  .contruir-marcas
+    min-height: 100vh
+    padding-top: 130px
+    .area-imagens
+      margin-bottom: -50px
+      position: relative
+      z-index: 10
+      .title-image-left, .title-image-right
+        font-family: 'Poppins', sans-serif
+        font-weight: bold
+        font-size: calculateRem(24px)
+      .title-image-left
+        position: absolute
+        left: -105px
+        top: 100px
+        z-index: 10
+        transform: rotate(-90deg)
+      .title-image-right
+        position: absolute
+        right: -105px
+        top: 100px
+        z-index: 10
+        transform: rotate(90deg)
+      .img-back
+        width: 50%
+        height: 650px
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+  .integrar
+    min-height: 100vh
+    background: $blue
+    position: relative
+    .produtos
+      width: 100%
+      position: absolute
+      left: 0
+      bottom: -280px
+      z-index: 10
+      .title-item
+        display: flex
+        width: 100%
+        justify-content: space-between
+        align-items: flex-end
+        margin-bottom: 30px
+        h3
+          font-weight: 200
+          font-size: calculateRem(12px)
+          color: $white
+        p
+          color: $gray
+          font-size: calculateRem(160px)
+          font-family: 'Work Sans', sans-serif
+          font-weight: 200
+          line-height: calculateRem(100px)
+      .img-produto
+        width: 100%
+        display: block
+        height: 340px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+
