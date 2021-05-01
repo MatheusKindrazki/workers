@@ -21,7 +21,7 @@ class Admin
 			</div>
 			<style>
 				.login h1 a {
-					background-image: url('<?php the_field('logotipo', 'options') ?>');
+					background-image: url('<?php the_field('logotipo_secundaria', 'options') ?>');
 				}
 			</style>
 		<?php 

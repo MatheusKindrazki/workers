@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'workers' );
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'eddy' );
+define( 'DB_USER', 'root' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'mentores594' );
+define( 'DB_PASSWORD', 'mysql' );
 
 /** Nome do host do MySQL */
 define( 'DB_HOST', 'localhost' );
