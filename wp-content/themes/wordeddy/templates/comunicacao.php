@@ -4,6 +4,35 @@
  */
 get_header(); ?>
 
+<style>
+
+.delayed-section {
+  position: absolute;
+  width: 30vw;
+  height: 38.87vw;
+}
+.delayed-section .inner-container {
+  will-change: transform;
+}
+.delayed-section img {
+  max-width: 100%;
+  will-change: transform;
+}
+
+#del1 {
+  top: 101vh;
+  left: 10vw;
+}
+#del2 {
+  top: 110vh;
+  left: 60vw;
+}
+#del3 {
+  top: 120vh;
+  left: 30vw;
+}
+</style>
+
 <div class="comunicacao">
   <div class="banner-comunicacao d-flex align-items-center">
     <video autoplay muted loop>
@@ -14,81 +43,49 @@ get_header(); ?>
     </div>
   </div>
 
-  <!-- <div class="produtos">
-    <div class="container">
-      <div class="back-blue"></div>
-    </div>
-    <div class="photobanner" style="background-image: url(<?php bloginfo('template_directory'); ?>/images/back-images.png)">
-      <div class="scrolling" id="galerry">
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/photo.png" alt="photo" />
+  <?php if( have_rows('destaques') ): ?>
+    <div class="session-five">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <?php $cont = 0; while( have_rows('topicos_sexta_sessao') ): the_row(); ?>
+            <div class="col-lg-4">
+              <div class="img-back" style="background-image: url(<?php the_sub_field('imagem'); ?>)"></div>
+              <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
+            </div>
+          <?php $cont++; endwhile; ?>
+        </div>
       </div>
     </div>
-  </div> -->
+  <?php endif; ?>
 
-  <style>
-    body {
-      overflow-x: hidden;
-    }
+  <?php if( have_rows('destaques') ): ?>
+    <div class="produtos">
+      <div class="container-person">
+        <div class="container">
+          <div class="back-blue"></div>
+        </div>
+      </div>
+      <div class="gallery" style="background-image: url(<?php bloginfo('template_directory'); ?>/images/back-images.png)">
+        <?php while( have_rows('destaques') ): the_row(); ?>
+          <?php if( have_rows('coluna') ): ?>
+            <div class="column-gallery">
+              <?php while( have_rows('coluna') ): the_row(); ?>
+                <div class="item-galerry">
+                  <img src="<?php the_sub_field('imagem'); ?>" alt="photo">
+                </div>
+              <?php endwhile; ?>
+            </div>
+          <?php endif; ?>
+        <?php endwhile; ?>
+      </div>
+      <div class="container-person">
+        <div class="container">
+          <div class="back-blue"></div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
 
-    .section {
-      font-size: 5rem;
-    }
-    .section--large {
-      width: 100vw;
-      background-color: #e4002b;
-      color: white;
-    }
-    .section--small {
-      width: 46rem;
-    }
-    .section--dark {
-      color: white;
-      background-color: black;
-    }
-
-    .center-marker {
-      position: fixed;
-      width: 2px;
-      height: 100vh;
-      background: tomato;
-      top: 0;
-      left: calc(50vw - 1px);
-    }
-
-    section {
-      font-weight: 900;
-      transition: color 0.3s;
-    }
-
-    section.active {
-      color: orange;
-    }
-  </style>
-
-<div class="wrapper d-flex flex-nowrap">
-  <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
-    Part One
-  </section>
-  <section class="section section--dark section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
-    Part Two
-  </section>
-  <section class="section section--small vh-100 flex-shrink-0 d-flex justify-content-center align-items-center">
-    Part Three
-  </section>
-  <section class="section section--large flex-shrink-0 vw-100 vh-100 d-flex justify-content-center align-items-center">
-    Part Four
-  </section>
-</div>
 </div>
 
 <?php get_footer(); ?>

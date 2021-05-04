@@ -4,10 +4,11 @@ const scrollToTop = () => {
 		return false;
 	});
 }
-const scrollTrigger = () => {
+const animation = () => {
+	
 	gsap.registerPlugin(ScrollTrigger);
 
-	const sections = gsap.utils.toArray("section");
+	const sections = gsap.utils.toArray(".column-gallery");
 	let maxWidth = 0;
 
 	const getMaxWidth = () => {
@@ -16,14 +17,16 @@ const scrollTrigger = () => {
 			maxWidth += section.offsetWidth;
 		});
 	};
+	
 	getMaxWidth();
+
 	ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
 
 	gsap.to(sections, {
 		x: () => `-${maxWidth - window.innerWidth}`,
 		ease: "none",
 		scrollTrigger: {
-			trigger: ".wrapper",
+			trigger: ".gallery",
 			pin: true,
 			scrub: true,
 			end: () => `+=${maxWidth}`,
@@ -35,7 +38,7 @@ const scrollTrigger = () => {
 		ScrollTrigger.create({
 			trigger: sct,
 			start: () => 'top top-=' + (sct.offsetLeft - window.innerWidth/2) * (maxWidth / (maxWidth - window.innerWidth)),
-			end: () => '+=' + sct.offsetWidth * (maxWidth / (maxWidth - window.innerWidth)),
+			end: () => '+=' + sct.offsetWidth * maxWidth,
 			toggleClass: {targets: sct, className: "active"}
 		});
 	});
@@ -43,5 +46,5 @@ const scrollTrigger = () => {
 
 jQuery('document').ready(function(){
 	scrollToTop();
-	scrollTrigger();
+	animation();
 });

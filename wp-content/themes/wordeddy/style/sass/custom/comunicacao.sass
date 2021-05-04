@@ -21,25 +21,30 @@
     width: 100%
     position: relative
     overflow: hidden
+    .container-person
+      background-color: $white
+      z-index: 10
+      position: relative
     .back-blue
-      height: 1200px
+      height: 100px
       background-color: $blue
-    .photobanner
-      min-height: 1000px
-      margin-top: 100px
-      position: absolute
+    .gallery
       width: 100%
-      top: 0px
-      left: 0px
-      overflow: hidden
-      white-space: nowrap
+      height: 950px
       background-position: left
       background-size: cover
       background-repeat: no-repeat
-      padding: 80px 0
-      .scrolling
-        overflow: hidden
-        white-space: nowrap
-        animation: bannermove 10s linear infinite
-        img    
-          margin: 0 0.5em 
+      padding: 50px 0
+      display: flex
+      flex-wrap: nowwrap
+      align-items: center
+      overflow: hidden
+      .column-gallery
+        transition: all 0.3s linear
+        display: flex
+        flex-direction: column
+        // opacity: 0
+        .item-galerry
+          margin: 20px 50px
+        &.active
+          opacity: 1
