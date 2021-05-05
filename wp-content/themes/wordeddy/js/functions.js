@@ -59,11 +59,14 @@ const hideShowAnimationScroll = () => {
 		} else if (elem.classList.contains("gs_reveal_fromTop")) {
 			x = 0;
 			y = -200;
+		} else if (elem.classList.contains("gs_reveal_fromBottom")) {
+			x = 0;
+			y = 200;
 		}
 		elem.style.transform = "translate(" + x + "px, " + y + "px)";
 		elem.style.opacity = "0";
 		gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
-			duration: 7, 
+			duration: 2, 
 			x: 0,
 			y: 0, 
 			autoAlpha: 1, 
@@ -103,6 +106,40 @@ const parallaxAnimationScroll = () => {
 	});
 }
 
+const parallaxBackground = () => {
+	gsap.utils.toArray(".parallax-back").forEach((section, i) => {
+		section.bg = section.querySelector(".bg"); 
+
+		if (i) {
+			section.bg.style.backgroundPosition = `50% ${-innerHeight / 2}px`;
+	
+			gsap.to(section.bg, {
+				backgroundPosition: `50% ${innerHeight / 2}px`,
+				ease: "none",
+				scrollTrigger: {
+					trigger: section,
+					scrub: true
+				}
+			});
+		} 
+
+		else {
+			section.bg.style.backgroundPosition = "50% 0px"; 
+	
+			gsap.to(section.bg, {
+				backgroundPosition: `50% ${innerHeight / 2}px`,
+				ease: "none",
+				scrollTrigger: {
+					trigger: section,
+					start: "top top", 
+					end: "bottom top",
+					scrub: true
+				}
+			});
+		}
+	});
+}
+
 const actionsModal = () => {
 	jQuery('.modal-video').on('hidden.bs.modal', function (e) {
 		jQuery('.modal-video video').trigger('pause');;
@@ -114,5 +151,6 @@ jQuery('document').ready(function(){
 	galleryAnimationScroll();
 	hideShowAnimationScroll();
 	parallaxAnimationScroll();
+	parallaxBackground();
 	actionsModal();
 });

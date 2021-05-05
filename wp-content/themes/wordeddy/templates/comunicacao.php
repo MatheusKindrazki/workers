@@ -10,7 +10,7 @@ get_header(); ?>
       <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
     </video>
     <div class="container d-flex justify-content-center">
-      <h1 class="animate__animated animate__fadeInDown"> <?php the_field('titulo_banner'); ?> </h1>
+      <h1 class="gs_reveal gs_reveal_fromTop"> <?php the_field('titulo_banner'); ?> </h1>
     </div>
   </div>
 

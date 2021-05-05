@@ -1,19 +1,4 @@
 @charset "UTF-8";
-@keyframes bannermove {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, 0);
-  }
-}
-#main {
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
 body {
   background-color: #ffffff;
   padding: 0;
@@ -152,7 +137,7 @@ a, button {
   color: #ffffff;
 }
 .front-page .integrar .produtos .title-item p {
-  color: #333333;
+  color: #5f5f5f;
   font-size: 10rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 200;

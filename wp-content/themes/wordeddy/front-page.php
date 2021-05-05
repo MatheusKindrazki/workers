@@ -7,20 +7,20 @@
       <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
     </video>
     <div class="container">
-      <h1> <?php the_field('titulo_banner'); ?> </h1>
+      <h1 class="gs_reveal gs_reveal_fromLeft"> <?php the_field('titulo_banner'); ?> </h1>
     </div>
   </div>
 
   <div class="contruir-marcas">
     <div class="container">
-      <h2 class="title-2">
+      <h2 class="title-2 gs_reveal gs_reveal_fromLeft">
         <?php the_field('titulo_contruir'); ?>
       </h2>
 
       <?php if( have_rows('cases_segunda_sessao') ): ?>
         <div class="d-flex area-imagens">
           <?php $cont = 0; while( have_rows('cases_segunda_sessao') ): the_row(); ?>
-              <div class="img-back" style="background-image: url(<?php the_sub_field('imagem'); ?>)"></div>
+              <div class="img-back gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" style="background-image: url(<?php the_sub_field('imagem'); ?>)"></div>
               <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
           <?php $cont++; endwhile; ?>
         </div>
@@ -30,7 +30,7 @@
 
   <div class="integrar d-flex align-items-center">
     <div class="container">
-      <h2 class="title-2 white">
+      <h2 class="title-2 white gs_reveal gs_reveal_fromLeft">
       <?php the_field('titulo_terceira_sessao') ?>
       </h2>
     </div>
@@ -39,7 +39,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center">
           <?php $cont = 1; while( have_rows('topicos__terceira_sessao') ): the_row(); ?>
-            <div class="col-lg-4">
+            <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
               <div class="title-item">
                 <h3><?php the_sub_field('titulo') ?></h3>
                 <p>0<?php echo $cont; ?>.</p>
@@ -54,7 +54,7 @@
   </div>
 
   <div class="desvendar d-flex justify-content-center flex-column">
-    <div class="container content">
+    <div class="container content gs_reveal gs_reveal_fromLeft">
       <img src="<?php the_field('logotipo_secundaria', 'options') ?>" alt="logotipo" class="mb-4">
       <h3 class="title-3">
       <?php the_field('texto_terceira_sessao') ?>
@@ -62,14 +62,16 @@
     </div>
   </div>
 
-  <div class="session-four" style="background-image: url(<?php the_field('video_quarta_sessao') ?>)"></div>
+  <div class="parallax-back">
+    <div class="session-four bg" style="background-image: url(<?php the_field('video_quarta_sessao') ?>)"></div>
+  </div>
 
   <?php if( have_rows('topicos_sexta_sessao') ): ?>
     <div class="session-five">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <?php $cont = 0; while( have_rows('topicos_sexta_sessao') ): the_row(); ?>
-            <div class="col-lg-4">
+            <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
               <div class="img-back" style="background-image: url(<?php the_sub_field('imagem'); ?>)"></div>
               <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
             </div>
