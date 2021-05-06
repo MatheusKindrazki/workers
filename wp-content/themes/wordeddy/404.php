@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
-<h1>
-	<pre>404</pre>
-</h1>
+<div class="content-default">
+  <div class="container d-flex justify-content-center">
+    <h1>404 :(</h1>
+  </div>
+</div>
+
 
 <?php get_footer(); ?>

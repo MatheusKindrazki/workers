@@ -146,6 +146,18 @@ const actionsModal = () => {
 	})
 }
 
+const menuAction = () => {
+	jQuery('.main-header .content button').click(function() {
+		jQuery('.main-header .menu-open-modal').addClass("active")
+		jQuery('body').addClass("modal-body-open")
+	})
+
+	jQuery('.main-header .menu-open-modal button.bg-close, .main-header .menu-open-modal button.btn-close, #menu-header a').click(function() {
+		jQuery('.main-header .menu-open-modal').removeClass("active")
+		jQuery('body').removeClass("modal-body-open")
+	})
+}
+
 jQuery('document').ready(function(){
 	scrollToTop();
 	galleryAnimationScroll();
@@ -153,4 +165,5 @@ jQuery('document').ready(function(){
 	parallaxAnimationScroll();
 	parallaxBackground();
 	actionsModal();
+	menuAction();
 });

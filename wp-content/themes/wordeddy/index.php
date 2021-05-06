@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
-<pre>Blog - Index</pre>
+<div class="content-default">
+  <div class="container d-flex justify-content-center">
+    <h1>Blog</h1>
+  </div>
+</div>
 
 <?php get_footer(); ?>

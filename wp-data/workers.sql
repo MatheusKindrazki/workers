@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 05-Maio-2021 às 00:48
+-- Tempo de geração: 06-Maio-2021 às 23:14
 -- Versão do servidor: 8.0.18
 -- versão do PHP: 7.3.11
 
@@ -301,8 +301,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (74, 'comment_order', 'asc', 'yes'),
 (75, 'sticky_posts', 'a:0:{}', 'yes'),
 (76, 'widget_categories', 'a:2:{i:2;a:4:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:12:\"hierarchical\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
-(77, 'widget_text', 'a:0:{}', 'yes'),
-(78, 'widget_rss', 'a:0:{}', 'yes'),
+(77, 'widget_text', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
+(78, 'widget_rss', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (79, 'uninstall_plugins', 'a:0:{}', 'no'),
 (80, 'timezone_string', 'America/Sao_Paulo', 'yes'),
 (81, 'page_for_posts', '0', 'yes'),
@@ -332,7 +332,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (105, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (107, 'sidebars_widgets', 'a:2:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(108, 'cron', 'a:7:{i:1620178947;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1620211347;a:4:{s:18:\"wp_https_detection\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1620254546;a:2:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1620254547;a:1:{s:17:\"gravityforms_cron\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1620254574;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1620254577;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(108, 'cron', 'a:8:{i:1620344547;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1620384147;a:4:{s:18:\"wp_https_detection\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1620427346;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1620427347;a:1:{s:17:\"gravityforms_cron\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1620427374;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1620427377;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1620859346;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}', 'yes'),
 (109, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (110, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (111, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -355,13 +355,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (147, 'can_compress_scripts', '1', 'no'),
 (158, 'theme_mods_twentytwentyone', 'a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1619563401;s:4:\"data\";a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";}s:9:\"sidebar-2\";a:3:{i:0;s:10:\"archives-2\";i:1;s:12:\"categories-2\";i:2;s:6:\"meta-2\";}}}}', 'yes'),
 (159, 'current_theme', 'Word Eddy', 'yes'),
-(160, 'theme_mods_wordeddy', 'a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
+(160, 'theme_mods_wordeddy', 'a:3:{i:0;b:0;s:18:\"nav_menu_locations\";a:3:{s:7:\"primary\";i:2;s:6:\"footer\";i:0;s:6:\"mobile\";i:0;}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
 (161, 'theme_switched', '', 'yes'),
 (164, 'finished_updating_comment_type', '1', 'yes'),
 (165, 'recently_activated', 'a:0:{}', 'yes'),
-(169, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.1.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.1.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.7.1\";s:7:\"version\";s:5:\"5.7.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1620168183;s:15:\"version_checked\";s:5:\"5.7.1\";s:12:\"translations\";a:0:{}}', 'no'),
-(171, '_site_transient_update_themes', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1620168185;s:7:\"checked\";a:1:{s:8:\"wordeddy\";s:1:\"1\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
-(172, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1620168185;s:7:\"checked\";a:2:{s:33:\"classic-editor/classic-editor.php\";s:3:\"1.6\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:3:\"5.6\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:2:{s:33:\"classic-editor/classic-editor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:28:\"w.org/plugins/classic-editor\";s:4:\"slug\";s:14:\"classic-editor\";s:6:\"plugin\";s:33:\"classic-editor/classic-editor.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/classic-editor/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/plugin/classic-editor.1.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-256x256.png?rev=1998671\";s:2:\"1x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-128x128.png?rev=1998671\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/classic-editor/assets/banner-1544x500.png?rev=1998671\";s:2:\"1x\";s:69:\"https://ps.w.org/classic-editor/assets/banner-772x250.png?rev=1998676\";}s:11:\"banners_rtl\";a:0:{}}s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:38:\"w.org/plugins/mousewheel-smooth-scroll\";s:4:\"slug\";s:24:\"mousewheel-smooth-scroll\";s:6:\"plugin\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:11:\"new_version\";s:3:\"5.6\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/mousewheel-smooth-scroll/\";s:7:\"package\";s:71:\"https://downloads.wordpress.org/plugin/mousewheel-smooth-scroll.5.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-256x256.png?rev=1063217\";s:2:\"1x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-128x128.png?rev=1063217\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:79:\"https://ps.w.org/mousewheel-smooth-scroll/assets/banner-772x250.jpg?rev=1063217\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(169, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.1.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.7.1.zip\";s:10:\"no_content\";s:0:\"\";s:11:\"new_bundled\";s:0:\"\";s:7:\"partial\";s:0:\"\";s:8:\"rollback\";s:0:\"\";}s:7:\"current\";s:5:\"5.7.1\";s:7:\"version\";s:5:\"5.7.1\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.6\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1620340978;s:15:\"version_checked\";s:5:\"5.7.1\";s:12:\"translations\";a:0:{}}', 'no'),
+(171, '_site_transient_update_themes', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1620340980;s:7:\"checked\";a:1:{s:8:\"wordeddy\";s:1:\"1\";}s:8:\"response\";a:0:{}s:9:\"no_update\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
+(172, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1620340980;s:7:\"checked\";a:2:{s:33:\"classic-editor/classic-editor.php\";s:3:\"1.6\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:3:\"5.6\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:2:{s:33:\"classic-editor/classic-editor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:28:\"w.org/plugins/classic-editor\";s:4:\"slug\";s:14:\"classic-editor\";s:6:\"plugin\";s:33:\"classic-editor/classic-editor.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/classic-editor/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/plugin/classic-editor.1.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-256x256.png?rev=1998671\";s:2:\"1x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-128x128.png?rev=1998671\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/classic-editor/assets/banner-1544x500.png?rev=1998671\";s:2:\"1x\";s:69:\"https://ps.w.org/classic-editor/assets/banner-772x250.png?rev=1998676\";}s:11:\"banners_rtl\";a:0:{}}s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:38:\"w.org/plugins/mousewheel-smooth-scroll\";s:4:\"slug\";s:24:\"mousewheel-smooth-scroll\";s:6:\"plugin\";s:53:\"mousewheel-smooth-scroll/mousewheel-smooth-scroll.php\";s:11:\"new_version\";s:3:\"5.6\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/mousewheel-smooth-scroll/\";s:7:\"package\";s:71:\"https://downloads.wordpress.org/plugin/mousewheel-smooth-scroll.5.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-256x256.png?rev=1063217\";s:2:\"1x\";s:77:\"https://ps.w.org/mousewheel-smooth-scroll/assets/icon-128x128.png?rev=1063217\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:79:\"https://ps.w.org/mousewheel-smooth-scroll/assets/banner-772x250.jpg?rev=1063217\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
 (173, 'wpmss_settings', 'a:1:{s:7:\"general\";a:4:{s:9:\"timestamp\";i:1619563873;s:14:\"pulseAlgorithm\";i:1;s:15:\"keyboardSupport\";i:1;s:15:\"fixedBackground\";i:1;}}', 'yes'),
 (176, 'new_admin_email', 'eduardo.gmfonseca@gmail.com', 'yes'),
 (183, 'options_favicon', '21', 'no'),
@@ -406,10 +406,15 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (240, '_options_redes_sociais_2_rede_social', 'field_608dac217c832', 'no'),
 (241, 'options_redes_sociais_3_rede_social', 'vimeo-v', 'no'),
 (242, '_options_redes_sociais_3_rede_social', 'field_608dac217c832', 'no'),
-(266, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1620209591', 'no'),
-(267, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:4:{s:9:\"sandboxed\";b:0;s:5:\"error\";N;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:2:{i:0;a:10:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:64:\"Demo + Discussion group: Creating and Registering Block Patterns\";s:3:\"url\";s:68:\"https://www.meetup.com/learn-wordpress-discussions/events/277669500/\";s:6:\"meetup\";s:27:\"Learn WordPress Discussions\";s:10:\"meetup_url\";s:51:\"https://www.meetup.com/learn-wordpress-discussions/\";s:4:\"date\";s:19:\"2021-05-04 07:00:00\";s:8:\"end_date\";s:19:\"2021-05-04 08:00:00\";s:20:\"start_unix_timestamp\";i:1620136800;s:18:\"end_unix_timestamp\";i:1620140400;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"US\";s:8:\"latitude\";d:37.779998779297003;s:9:\"longitude\";d:-122.41999816895;}}i:1;a:10:{s:4:\"type\";s:8:\"wordcamp\";s:5:\"title\";s:18:\"WordCamp Venezuela\";s:3:\"url\";s:36:\"https://venezuela.wordcamp.org/2021/\";s:6:\"meetup\";N;s:10:\"meetup_url\";N;s:4:\"date\";s:19:\"2021-05-06 16:00:00\";s:8:\"end_date\";s:19:\"2021-05-07 00:00:00\";s:20:\"start_unix_timestamp\";i:1620331200;s:18:\"end_unix_timestamp\";i:1620360000;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"VE\";s:8:\"latitude\";d:10.4805937;s:9:\"longitude\";d:-66.903606300000007;}}}}', 'no'),
-(277, '_site_transient_timeout_theme_roots', '1620169984', 'no'),
-(278, '_site_transient_theme_roots', 'a:1:{s:8:\"wordeddy\";s:7:\"/themes\";}', 'no');
+(287, '_site_transient_timeout_browser_3651f072395347537c74089989c88a66', '1620830554', 'no'),
+(288, '_site_transient_browser_3651f072395347537c74089989c88a66', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"90.0.4430.93\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
+(289, '_site_transient_timeout_php_check_a4e7a3af7060c530d791075f6e3eb5fa', '1620830555', 'no'),
+(290, '_site_transient_php_check_a4e7a3af7060c530d791075f6e3eb5fa', 'a:5:{s:19:\"recommended_version\";s:3:\"7.4\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
+(291, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:\"auto_add\";a:0:{}}', 'yes'),
+(299, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1620383858', 'no'),
+(300, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:4:{s:9:\"sandboxed\";b:0;s:5:\"error\";N;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:1:{i:0;a:10:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:64:\"Demo + Discussion group: Creating and Registering Block Patterns\";s:3:\"url\";s:68:\"https://www.meetup.com/learn-wordpress-discussions/events/277669527/\";s:6:\"meetup\";s:27:\"Learn WordPress Discussions\";s:10:\"meetup_url\";s:51:\"https://www.meetup.com/learn-wordpress-discussions/\";s:4:\"date\";s:19:\"2021-05-11 11:00:00\";s:8:\"end_date\";s:19:\"2021-05-11 12:00:00\";s:20:\"start_unix_timestamp\";i:1620756000;s:18:\"end_unix_timestamp\";i:1620759600;s:8:\"location\";a:4:{s:8:\"location\";s:6:\"Online\";s:7:\"country\";s:2:\"US\";s:8:\"latitude\";d:37.779998779297003;s:9:\"longitude\";d:-122.41999816895;}}}}', 'no'),
+(304, '_site_transient_timeout_theme_roots', '1620342779', 'no'),
+(305, '_site_transient_theme_roots', 'a:1:{s:8:\"wordeddy\";s:7:\"/themes\";}', 'no');
 
 -- --------------------------------------------------------
 
@@ -437,9 +442,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6, 3, '_wp_trash_meta_status', 'draft'),
 (7, 3, '_wp_trash_meta_time', '1619563826'),
 (8, 3, '_wp_desired_post_slug', 'politica-de-privacidade'),
-(9, 7, '_edit_lock', '1619563691:1'),
 (10, 8, '_edit_last', '1'),
-(11, 8, '_edit_lock', '1619896526:1'),
+(11, 8, '_edit_lock', '1620309502:1'),
 (12, 8, '_wp_page_template', 'default'),
 (13, 10, '_edit_last', '1'),
 (14, 10, '_edit_lock', '1620089258:1'),
@@ -1216,16 +1220,16 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (785, 82, '_edit_last', '1'),
 (786, 82, '_edit_lock', '1620170713:1'),
 (787, 83, '_edit_last', '1'),
-(788, 83, '_edit_lock', '1620171711:1'),
+(788, 83, '_edit_lock', '1620225975:1'),
 (789, 83, '_wp_page_template', 'templates/comunicacao.php'),
 (790, 83, 'video_banner', '13'),
 (791, 83, '_video_banner', 'field_608f16d40d945'),
 (792, 83, 'titulo_banner', 'comunicação.'),
 (793, 83, '_titulo_banner', 'field_608f16ed0d946'),
 (794, 88, 'video_banner', '13'),
-(795, 88, '_video_banner', 'field_608f16d40d945');
+(795, 88, '_video_banner', 'field_608f16d40d945'),
+(796, 88, 'titulo_banner', 'comunicação.');
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
-(796, 88, 'titulo_banner', 'comunicação.'),
 (797, 88, '_titulo_banner', 'field_608f16ed0d946'),
 (806, 83, 'destaques_0_coluna_0_imagem', '93'),
 (807, 83, '_destaques_0_coluna_0_imagem', 'field_609099e3618fd'),
@@ -1928,9 +1932,9 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1508, 83, 'videos_2_thumb', '124'),
 (1509, 83, '_videos_2_thumb', 'field_6091d8520ce89'),
 (1510, 83, 'videos_3_thumb', '125'),
-(1511, 83, '_videos_3_thumb', 'field_6091d8520ce89');
+(1511, 83, '_videos_3_thumb', 'field_6091d8520ce89'),
+(1512, 83, 'videos_4_thumb', '126');
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
-(1512, 83, 'videos_4_thumb', '126'),
 (1513, 83, '_videos_4_thumb', 'field_6091d8520ce89'),
 (1514, 83, 'videos_5_thumb', '127'),
 (1515, 83, '_videos_5_thumb', 'field_6091d8520ce89'),
@@ -2059,7 +2063,56 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1638, 128, 'videos_4_thumb', '126'),
 (1639, 128, '_videos_4_thumb', 'field_6091d8520ce89'),
 (1640, 128, 'videos_5_thumb', '127'),
-(1641, 128, '_videos_5_thumb', 'field_6091d8520ce89');
+(1641, 128, '_videos_5_thumb', 'field_6091d8520ce89'),
+(1660, 132, '_edit_last', '1'),
+(1661, 132, '_wp_page_template', 'default'),
+(1662, 132, '_edit_lock', '1620340526:1'),
+(1663, 134, '_edit_last', '1'),
+(1664, 134, '_wp_page_template', 'default'),
+(1665, 134, '_edit_lock', '1620340540:1'),
+(1666, 136, '_edit_last', '1'),
+(1667, 136, '_wp_page_template', 'default'),
+(1668, 136, '_edit_lock', '1620340557:1'),
+(1669, 138, '_menu_item_type', 'post_type'),
+(1670, 138, '_menu_item_menu_item_parent', '0'),
+(1671, 138, '_menu_item_object_id', '136'),
+(1672, 138, '_menu_item_object', 'page'),
+(1673, 138, '_menu_item_target', ''),
+(1674, 138, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(1675, 138, '_menu_item_xfn', ''),
+(1676, 138, '_menu_item_url', ''),
+(1678, 139, '_menu_item_type', 'post_type'),
+(1679, 139, '_menu_item_menu_item_parent', '0'),
+(1680, 139, '_menu_item_object_id', '83'),
+(1681, 139, '_menu_item_object', 'page'),
+(1682, 139, '_menu_item_target', ''),
+(1683, 139, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(1684, 139, '_menu_item_xfn', ''),
+(1685, 139, '_menu_item_url', ''),
+(1687, 140, '_menu_item_type', 'post_type'),
+(1688, 140, '_menu_item_menu_item_parent', '0'),
+(1689, 140, '_menu_item_object_id', '134'),
+(1690, 140, '_menu_item_object', 'page'),
+(1691, 140, '_menu_item_target', ''),
+(1692, 140, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(1693, 140, '_menu_item_xfn', ''),
+(1694, 140, '_menu_item_url', ''),
+(1696, 141, '_menu_item_type', 'post_type'),
+(1697, 141, '_menu_item_menu_item_parent', '0'),
+(1698, 141, '_menu_item_object_id', '132'),
+(1699, 141, '_menu_item_object', 'page'),
+(1700, 141, '_menu_item_target', ''),
+(1701, 141, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(1702, 141, '_menu_item_xfn', ''),
+(1703, 141, '_menu_item_url', ''),
+(1705, 142, '_menu_item_type', 'post_type'),
+(1706, 142, '_menu_item_menu_item_parent', '0'),
+(1707, 142, '_menu_item_object_id', '8'),
+(1708, 142, '_menu_item_object', 'page'),
+(1709, 142, '_menu_item_target', ''),
+(1710, 142, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(1711, 142, '_menu_item_xfn', ''),
+(1712, 142, '_menu_item_url', '');
 
 -- --------------------------------------------------------
 
@@ -2103,7 +2156,6 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (3, 1, '2021-04-27 19:42:24', '2021-04-27 22:42:24', '<!-- wp:heading --><h2>Quem somos</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>O endereço do nosso site é: http://localhost/workers.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Comentários</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Quando os visitantes deixam comentários no site, coletamos os dados mostrados no formulário de comentários, além do endereço de IP e de dados do navegador do visitante, para auxiliar na detecção de spam.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Uma sequência anonimizada de caracteres criada a partir do seu e-mail (também chamada de hash) poderá ser enviada para o Gravatar para verificar se você usa o serviço. A política de privacidade do Gravatar está disponível aqui: https://automattic.com/privacy/. Depois da aprovação do seu comentário, a foto do seu perfil fica visível publicamente junto de seu comentário.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Mídia</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você envia imagens para o site, evite enviar as que contenham dados de localização incorporados (EXIF GPS). Visitantes podem baixar estas imagens do site e extrair delas seus dados de localização.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Cookies</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Ao deixar um comentário no site, você poderá optar por salvar seu nome, e-mail e site nos cookies. Isso visa seu conforto, assim você não precisará preencher seus  dados novamente quando fizer outro comentário. Estes cookies duram um ano.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Se você tem uma conta e acessa este site, um cookie temporário será criado para determinar se seu navegador aceita cookies. Ele não contém nenhum dado pessoal e será descartado quando você fechar seu navegador.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Quando você acessa sua conta no site, também criamos vários cookies para salvar os dados da sua conta e suas escolhas de exibição de tela. Cookies de login são mantidos por dois dias e cookies de opções de tela por um ano. Se você selecionar &quot;Lembrar-me&quot;, seu acesso será mantido por duas semanas. Se você se desconectar da sua conta, os cookies de login serão removidos.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Se você editar ou publicar um artigo, um cookie adicional será salvo no seu navegador. Este cookie não inclui nenhum dado pessoal e simplesmente indica o ID do post referente ao artigo que você acabou de editar. Ele expira depois de 1 dia.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Mídia incorporada de outros sites</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Artigos neste site podem incluir conteúdo incorporado como, por exemplo, vídeos, imagens, artigos, etc. Conteúdos incorporados de outros sites se comportam exatamente da mesma forma como se o visitante estivesse visitando o outro site.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Estes sites podem coletar dados sobre você, usar cookies, incorporar rastreamento adicional de terceiros e monitorar sua interação com este conteúdo incorporado, incluindo sua interação com o conteúdo incorporado se você tem uma conta e está conectado com o site.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Com quem partilhamos seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você solicitar uma redefinição de senha, seu endereço de IP será incluído no e-mail de redefinição de senha.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Por quanto tempo mantemos os seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você deixar um comentário, o comentário e os seus metadados são conservados indefinidamente. Fazemos isso para que seja possível reconhecer e aprovar automaticamente qualquer comentário posterior ao invés de retê-lo para moderação.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Para usuários que se registram no nosso site (se houver), também guardamos as informações pessoais que fornecem no seu perfil de usuário. Todos os usuários podem ver, editar ou excluir suas informações pessoais a qualquer momento (só não é possível alterar o seu username). Os administradores de sites também podem ver e editar estas informações.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Quais os seus direitos sobre seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você tiver uma conta neste site ou se tiver deixado comentários, pode solicitar um arquivo exportado dos dados pessoais que mantemos sobre você, inclusive quaisquer dados que nos tenha fornecido. Também pode solicitar que removamos qualquer dado pessoal que mantemos sobre você. Isto não inclui nenhuns dados que somos obrigados a manter para propósitos administrativos, legais ou de segurança.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Para onde enviamos seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Comentários de visitantes podem ser marcados por um serviço automático de detecção de spam.</p><!-- /wp:paragraph -->', 'Política de privacidade', '', 'trash', 'closed', 'open', '', 'politica-de-privacidade__trashed', '', '', '2021-04-27 19:50:26', '2021-04-27 22:50:26', '', 0, 'http://localhost/workers/?page_id=3', 0, 'page', '', 0),
 (5, 1, '2021-04-27 19:50:24', '2021-04-27 22:50:24', '<!-- wp:paragraph -->\n<p>Esta é uma página de exemplo. É diferente de um post no blog porque ela permanecerá em um lugar e aparecerá na navegação do seu site na maioria dos temas. Muitas pessoas começam com uma página que as apresenta a possíveis visitantes do site. Ela pode dizer algo assim:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>Olá! Eu sou um mensageiro de bicicleta durante o dia, ator aspirante à noite, e este é o meu site. Eu moro em São Paulo, tenho um grande cachorro chamado Rex e gosto de tomar caipirinha (e banhos de chuva).</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>...ou alguma coisa assim:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>A Companhia de Miniaturas XYZ foi fundada em 1971, e desde então tem fornecido miniaturas de qualidade ao público. Localizada na cidade de Itu, a XYZ emprega mais de 2.000 pessoas e faz coisas grandiosas para a comunidade da cidade.</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>Como um novo usuário do WordPress, você deveria ir ao <a href=\"http://localhost/workers/wp-admin/\">painel</a> para excluir essa página e criar novas páginas para o seu conteúdo. Divirta-se!</p>\n<!-- /wp:paragraph -->', 'Página de exemplo', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2021-04-27 19:50:24', '2021-04-27 22:50:24', '', 2, 'http://localhost/workers/?p=5', 0, 'revision', '', 0),
 (6, 1, '2021-04-27 19:50:26', '2021-04-27 22:50:26', '<!-- wp:heading --><h2>Quem somos</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>O endereço do nosso site é: http://localhost/workers.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Comentários</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Quando os visitantes deixam comentários no site, coletamos os dados mostrados no formulário de comentários, além do endereço de IP e de dados do navegador do visitante, para auxiliar na detecção de spam.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Uma sequência anonimizada de caracteres criada a partir do seu e-mail (também chamada de hash) poderá ser enviada para o Gravatar para verificar se você usa o serviço. A política de privacidade do Gravatar está disponível aqui: https://automattic.com/privacy/. Depois da aprovação do seu comentário, a foto do seu perfil fica visível publicamente junto de seu comentário.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Mídia</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você envia imagens para o site, evite enviar as que contenham dados de localização incorporados (EXIF GPS). Visitantes podem baixar estas imagens do site e extrair delas seus dados de localização.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Cookies</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Ao deixar um comentário no site, você poderá optar por salvar seu nome, e-mail e site nos cookies. Isso visa seu conforto, assim você não precisará preencher seus  dados novamente quando fizer outro comentário. Estes cookies duram um ano.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Se você tem uma conta e acessa este site, um cookie temporário será criado para determinar se seu navegador aceita cookies. Ele não contém nenhum dado pessoal e será descartado quando você fechar seu navegador.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Quando você acessa sua conta no site, também criamos vários cookies para salvar os dados da sua conta e suas escolhas de exibição de tela. Cookies de login são mantidos por dois dias e cookies de opções de tela por um ano. Se você selecionar &quot;Lembrar-me&quot;, seu acesso será mantido por duas semanas. Se você se desconectar da sua conta, os cookies de login serão removidos.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Se você editar ou publicar um artigo, um cookie adicional será salvo no seu navegador. Este cookie não inclui nenhum dado pessoal e simplesmente indica o ID do post referente ao artigo que você acabou de editar. Ele expira depois de 1 dia.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Mídia incorporada de outros sites</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Artigos neste site podem incluir conteúdo incorporado como, por exemplo, vídeos, imagens, artigos, etc. Conteúdos incorporados de outros sites se comportam exatamente da mesma forma como se o visitante estivesse visitando o outro site.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Estes sites podem coletar dados sobre você, usar cookies, incorporar rastreamento adicional de terceiros e monitorar sua interação com este conteúdo incorporado, incluindo sua interação com o conteúdo incorporado se você tem uma conta e está conectado com o site.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Com quem partilhamos seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você solicitar uma redefinição de senha, seu endereço de IP será incluído no e-mail de redefinição de senha.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Por quanto tempo mantemos os seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você deixar um comentário, o comentário e os seus metadados são conservados indefinidamente. Fazemos isso para que seja possível reconhecer e aprovar automaticamente qualquer comentário posterior ao invés de retê-lo para moderação.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Para usuários que se registram no nosso site (se houver), também guardamos as informações pessoais que fornecem no seu perfil de usuário. Todos os usuários podem ver, editar ou excluir suas informações pessoais a qualquer momento (só não é possível alterar o seu username). Os administradores de sites também podem ver e editar estas informações.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Quais os seus direitos sobre seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Se você tiver uma conta neste site ou se tiver deixado comentários, pode solicitar um arquivo exportado dos dados pessoais que mantemos sobre você, inclusive quaisquer dados que nos tenha fornecido. Também pode solicitar que removamos qualquer dado pessoal que mantemos sobre você. Isto não inclui nenhuns dados que somos obrigados a manter para propósitos administrativos, legais ou de segurança.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Para onde enviamos seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Texto sugerido: </strong>Comentários de visitantes podem ser marcados por um serviço automático de detecção de spam.</p><!-- /wp:paragraph -->', 'Política de privacidade', '', 'inherit', 'closed', 'closed', '', '3-revision-v1', '', '', '2021-04-27 19:50:26', '2021-04-27 22:50:26', '', 3, 'http://localhost/workers/?p=6', 0, 'revision', '', 0),
-(7, 1, '2021-04-27 19:50:29', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2021-04-27 19:50:29', '0000-00-00 00:00:00', '', 0, 'http://localhost/workers/?page_id=7', 0, 'page', '', 0),
 (8, 1, '2021-04-27 19:51:31', '2021-04-27 22:51:31', '', 'Home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2021-05-01 16:11:02', '2021-05-01 19:11:02', '', 0, 'http://localhost/workers/?page_id=8', 0, 'page', '', 0),
 (9, 1, '2021-04-27 19:51:31', '2021-04-27 22:51:31', '', 'Home', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2021-04-27 19:51:31', '2021-04-27 22:51:31', '', 8, 'http://localhost/workers/?p=9', 0, 'revision', '', 0),
 (10, 1, '2021-04-27 19:57:58', '2021-04-27 22:57:58', 'a:7:{s:8:\"location\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"page_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:10:\"front_page\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";a:13:{i:0;s:11:\"the_content\";i:1;s:7:\"excerpt\";i:2;s:10:\"discussion\";i:3;s:8:\"comments\";i:4;s:9:\"revisions\";i:5;s:4:\"slug\";i:6;s:6:\"author\";i:7;s:6:\"format\";i:8;s:15:\"page_attributes\";i:9;s:14:\"featured_image\";i:10;s:10:\"categories\";i:11;s:4:\"tags\";i:12;s:15:\"send-trackbacks\";}s:11:\"description\";s:0:\"\";}', 'Home', 'home', 'publish', 'closed', 'closed', '', 'group_608895e6ad448', '', '', '2021-05-01 16:06:08', '2021-05-01 19:06:08', '', 0, 'http://localhost/workers/?post_type=acf-field-group&#038;p=10', 0, 'acf-field-group', '', 0),
@@ -2209,7 +2261,19 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (125, 1, '2021-05-04 20:31:36', '2021-05-04 23:31:36', '', 'Untitled-4', '', 'inherit', 'open', 'closed', '', 'untitled-4-2', '', '', '2021-05-04 20:31:36', '2021-05-04 23:31:36', '', 83, 'http://localhost/workers/wp-content/uploads/2021/05/Untitled-4.png', 0, 'attachment', 'image/png', 0),
 (126, 1, '2021-05-04 20:31:37', '2021-05-04 23:31:37', '', 'Untitled-5', '', 'inherit', 'open', 'closed', '', 'untitled-5', '', '', '2021-05-04 20:31:37', '2021-05-04 23:31:37', '', 83, 'http://localhost/workers/wp-content/uploads/2021/05/Untitled-5.png', 0, 'attachment', 'image/png', 0),
 (127, 1, '2021-05-04 20:31:38', '2021-05-04 23:31:38', '', 'Untitled-6', '', 'inherit', 'open', 'closed', '', 'untitled-6', '', '', '2021-05-04 20:31:38', '2021-05-04 23:31:38', '', 83, 'http://localhost/workers/wp-content/uploads/2021/05/Untitled-6.png', 0, 'attachment', 'image/png', 0),
-(128, 1, '2021-05-04 20:31:57', '2021-05-04 23:31:57', '', 'Comunicação', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2021-05-04 20:31:57', '2021-05-04 23:31:57', '', 83, 'http://localhost/workers/?p=128', 0, 'revision', '', 0);
+(128, 1, '2021-05-04 20:31:57', '2021-05-04 23:31:57', '', 'Comunicação', '', 'inherit', 'closed', 'closed', '', '83-revision-v1', '', '', '2021-05-04 20:31:57', '2021-05-04 23:31:57', '', 83, 'http://localhost/workers/?p=128', 0, 'revision', '', 0),
+(129, 1, '2021-05-05 11:42:36', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2021-05-05 11:42:36', '0000-00-00 00:00:00', '', 0, 'http://localhost/workers/?p=129', 0, 'post', '', 0),
+(132, 1, '2021-05-06 19:37:49', '2021-05-06 22:37:49', '', 'Produto', '', 'publish', 'closed', 'closed', '', 'produto', '', '', '2021-05-06 19:37:49', '2021-05-06 22:37:49', '', 0, 'http://localhost/workers/?page_id=132', 0, 'page', '', 0),
+(133, 1, '2021-05-06 19:37:49', '2021-05-06 22:37:49', '', 'Produto', '', 'inherit', 'closed', 'closed', '', '132-revision-v1', '', '', '2021-05-06 19:37:49', '2021-05-06 22:37:49', '', 132, 'http://localhost/workers/?p=133', 0, 'revision', '', 0),
+(134, 1, '2021-05-06 19:38:01', '2021-05-06 22:38:01', '', 'Ponto de Venda', '', 'publish', 'closed', 'closed', '', 'ponto-de-venda', '', '', '2021-05-06 19:38:01', '2021-05-06 22:38:01', '', 0, 'http://localhost/workers/?page_id=134', 0, 'page', '', 0),
+(135, 1, '2021-05-06 19:38:01', '2021-05-06 22:38:01', '', 'Ponto de Venda', '', 'inherit', 'closed', 'closed', '', '134-revision-v1', '', '', '2021-05-06 19:38:01', '2021-05-06 22:38:01', '', 134, 'http://localhost/workers/?p=135', 0, 'revision', '', 0),
+(136, 1, '2021-05-06 19:38:19', '2021-05-06 22:38:19', '', 'A Workers', '', 'publish', 'closed', 'closed', '', 'a-workers', '', '', '2021-05-06 19:38:19', '2021-05-06 22:38:19', '', 0, 'http://localhost/workers/?page_id=136', 0, 'page', '', 0),
+(137, 1, '2021-05-06 19:38:19', '2021-05-06 22:38:19', '', 'A Workers', '', 'inherit', 'closed', 'closed', '', '136-revision-v1', '', '', '2021-05-06 19:38:19', '2021-05-06 22:38:19', '', 136, 'http://localhost/workers/?p=137', 0, 'revision', '', 0),
+(138, 1, '2021-05-06 19:39:11', '2021-05-06 22:39:11', ' ', '', '', 'publish', 'closed', 'closed', '', '138', '', '', '2021-05-06 19:39:11', '2021-05-06 22:39:11', '', 0, 'http://localhost/workers/?p=138', 2, 'nav_menu_item', '', 0),
+(139, 1, '2021-05-06 19:39:11', '2021-05-06 22:39:11', ' ', '', '', 'publish', 'closed', 'closed', '', '139', '', '', '2021-05-06 19:39:11', '2021-05-06 22:39:11', '', 0, 'http://localhost/workers/?p=139', 3, 'nav_menu_item', '', 0),
+(140, 1, '2021-05-06 19:39:11', '2021-05-06 22:39:11', ' ', '', '', 'publish', 'closed', 'closed', '', '140', '', '', '2021-05-06 19:39:11', '2021-05-06 22:39:11', '', 0, 'http://localhost/workers/?p=140', 4, 'nav_menu_item', '', 0),
+(141, 1, '2021-05-06 19:39:12', '2021-05-06 22:39:12', ' ', '', '', 'publish', 'closed', 'closed', '', '141', '', '', '2021-05-06 19:39:12', '2021-05-06 22:39:12', '', 0, 'http://localhost/workers/?p=141', 5, 'nav_menu_item', '', 0),
+(142, 1, '2021-05-06 19:39:10', '2021-05-06 22:39:10', ' ', '', '', 'publish', 'closed', 'closed', '', '142', '', '', '2021-05-06 19:39:10', '2021-05-06 22:39:10', '', 0, 'http://localhost/workers/?p=142', 1, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -2242,7 +2306,8 @@ CREATE TABLE `wp_terms` (
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Sem categoria', 'sem-categoria', 0);
+(1, 'Sem categoria', 'sem-categoria', 0),
+(2, 'Header', 'header', 0);
 
 -- --------------------------------------------------------
 
@@ -2261,7 +2326,12 @@ CREATE TABLE `wp_term_relationships` (
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
-(1, 1, 0);
+(1, 1, 0),
+(138, 2, 0),
+(139, 2, 0),
+(140, 2, 0),
+(141, 2, 0),
+(142, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -2283,7 +2353,8 @@ CREATE TABLE `wp_term_taxonomy` (
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1);
+(1, 1, 'category', '', 0, 1),
+(2, 2, 'nav_menu', '', 0, 5);
 
 -- --------------------------------------------------------
 
@@ -2319,14 +2390,17 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (14, 1, 'dismissed_wp_pointers', ''),
 (15, 1, 'show_welcome_panel', '0'),
 (16, 1, 'session_tokens', 'a:2:{s:64:\"a3feca942bbff535db9037b3e059851e85a557d6c6f9bc0d12331d83dd9d8ffd\";a:4:{s:10:\"expiration\";i:1620772973;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36\";s:5:\"login\";i:1619563373;}s:64:\"6e1a4b43d48732a6597a8af1f0ad190c51201f4c451ebeb2e615269dd3cea00d\";a:4:{s:10:\"expiration\";i:1620066665;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36\";s:5:\"login\";i:1619893865;}}'),
-(17, 1, 'wp_dashboard_quick_press_last_post_id', '4'),
+(17, 1, 'wp_dashboard_quick_press_last_post_id', '129'),
 (18, 1, 'meta-box-order_dashboard', 'a:4:{s:6:\"normal\";s:40:\"dashboard_site_health,dashboard_activity\";s:4:\"side\";s:39:\"dashboard_primary,dashboard_quick_press\";s:7:\"column3\";s:19:\"dashboard_right_now\";s:7:\"column4\";s:0:\"\";}'),
 (19, 1, 'closedpostboxes_dashboard', 'a:6:{i:0;s:21:\"dashboard_site_health\";i:1;s:18:\"dashboard_activity\";i:2;s:18:\"rg_forms_dashboard\";i:3;s:17:\"dashboard_primary\";i:4;s:21:\"dashboard_quick_press\";i:5;s:19:\"dashboard_right_now\";}'),
 (20, 1, 'metaboxhidden_dashboard', 'a:0:{}'),
 (21, 1, 'wp_user-settings', 'libraryContent=browse&editor=html'),
 (22, 1, 'wp_user-settings-time', '1619895118'),
 (23, 1, 'closedpostboxes_page', 'a:0:{}'),
-(24, 1, 'metaboxhidden_page', 'a:9:{i:0;s:13:\"pageparentdiv\";i:1;s:12:\"postimagediv\";i:2;s:23:\"acf-group_608895e6ad448\";i:3;s:23:\"acf-group_60889d2c1a4d1\";i:4;s:12:\"revisionsdiv\";i:5;s:16:\"commentstatusdiv\";i:6;s:11:\"commentsdiv\";i:7;s:7:\"slugdiv\";i:8;s:9:\"authordiv\";}');
+(24, 1, 'metaboxhidden_page', 'a:9:{i:0;s:13:\"pageparentdiv\";i:1;s:12:\"postimagediv\";i:2;s:23:\"acf-group_608895e6ad448\";i:3;s:23:\"acf-group_60889d2c1a4d1\";i:4;s:12:\"revisionsdiv\";i:5;s:16:\"commentstatusdiv\";i:6;s:11:\"commentsdiv\";i:7;s:7:\"slugdiv\";i:8;s:9:\"authordiv\";}'),
+(25, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),
+(26, 1, 'metaboxhidden_nav-menus', 'a:1:{i:0;s:12:\"add-post_tag\";}'),
+(27, 1, 'nav_menu_recently_edited', '2');
 
 -- --------------------------------------------------------
 
@@ -2566,19 +2640,19 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT de tabela `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=281;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=307;
 
 --
 -- AUTO_INCREMENT de tabela `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1642;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1714;
 
 --
 -- AUTO_INCREMENT de tabela `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
 
 --
 -- AUTO_INCREMENT de tabela `wp_termmeta`
@@ -2590,19 +2664,19 @@ ALTER TABLE `wp_termmeta`
 -- AUTO_INCREMENT de tabela `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de tabela `wp_users`
