@@ -14,14 +14,14 @@
     </div>
     <p class="email"><?php the_field('e-mail', 'options') ?></p>
     <div class="area-whats d-flex align-items-end">
-      <img src="<?php the_field('icone_whatsapp', 'options') ?>" alt="whatsapp">
+      <img src="<?php bloginfo('template_directory'); ?>/images/text-whats-2.png" alt="whatsapp">
       <p><?php the_field('whatsapp', 'options') ?></p>
     </div>
     <div class="bottom-footer d-flex justify-content-between">
       <?php if( have_rows('redes_sociais', 'options') ): ?>
         <div class="redes d-flex">
           <?php $cont = 0; while( have_rows('redes_sociais', 'options') ): the_row(); ?>
-            <a href="<?php the_sub_field('link'); ?>"><i class="fab fa-<?php the_sub_field('rede_social'); ?>"></i></a>
+            <a href="<?php the_sub_field('link'); ?>" target="_blank"><i class="fab fa-<?php the_sub_field('rede_social'); ?>"></i></a>
           <?php $cont++; endwhile; ?>
         </div>
       <?php endif; ?>
@@ -42,6 +42,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
 
 <!-- Theme JS -->
 <script src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>

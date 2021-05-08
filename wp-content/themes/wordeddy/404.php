@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-<div class="content-default">
-  <div class="container d-flex justify-content-center">
-    <h1>404 :(</h1>
+<div class="header-black"></div>
+
+<div class="area-page">
+  <div class="container py-5">
+    <h1 class="text-center">Página não encontrada! :(</h1>
   </div>
 </div>
 

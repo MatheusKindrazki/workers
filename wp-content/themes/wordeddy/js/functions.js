@@ -142,7 +142,15 @@ const parallaxBackground = () => {
 
 const actionsModal = () => {
 	jQuery('.modal-video').on('hidden.bs.modal', function (e) {
-		jQuery('.modal-video video').trigger('pause');;
+		if(jQuery('.modal-video video')) {
+			jQuery('.modal-video video').trigger('pause');
+		}
+
+		if(jQuery('.modal-video iframe')) {
+			var iframe = jQuery('.modal-video iframe').get(0);
+			var player = new Vimeo.Player(iframe);
+			player.pause();
+		}
 	})
 }
 

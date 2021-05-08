@@ -2,6 +2,10 @@
   .banner-home
     position: relative
     min-height: 100vh
+    display: block
+    width: 100%
+    background: transparent
+    border: 0px solid
     video
       position: absolute
       right: 0
@@ -14,6 +18,7 @@
       font-weight: 300
       font-size: calculateRem(85px)
       color: $white
+      text-align: left
   .contruir-marcas
     min-height: 720px
     padding-top: 130px
@@ -43,6 +48,7 @@
         background-repeat: no-repeat
         background-position: center
         background-size: cover
+        border: 0px solid
   .integrar
     min-height: 720px
     background: $blue
@@ -69,13 +75,19 @@
           font-family: 'Work Sans', sans-serif
           font-weight: 200
           line-height: calculateRem(100px)
-      .img-produto
-        width: 100%
+      a
+        text-decoration: none
+        transition: all .3s linear
         display: block
-        height: 340px
-        background-position: center
-        background-repeat: no-repeat
-        background-size: cover
+        &:hover
+          opacity: 0.8
+        .img-produto
+          width: 100%
+          display: block
+          height: 340px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: cover
   .desvendar
     min-height: 720px
     .content

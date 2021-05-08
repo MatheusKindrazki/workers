@@ -2,7 +2,9 @@
 
 <header class="main-header">
   <div class="content container d-flex align-items-center justify-content-between">
-    <img src="<?php the_field('logotipo', 'options') ?>" alt="logotipo">
+    <a href="<?php bloginfo('url') ?>" class="d-block">
+      <img src="<?php the_field('logotipo', 'options') ?>" alt="logotipo">
+    </a>
     <button type="button">
       Menu <i class="fas fa-ellipsis-v"></i>
     </button>

@@ -64,18 +64,42 @@ a, button {
   padding-right: 15px;
 }
 
-.content-default {
-  display: flex;
+.modal-video .modal-dialog {
+  max-width: 1000px !important;
+}
+.modal-video .modal-content {
+  border: 0px solid;
+  border-radius: 0;
+  background: transparent;
+  height: fit-content;
+}
+.modal-video .modal-content .modal-body {
+  padding: 0;
+  position: relative;
+  background: transparent;
+  height: fit-content;
+}
+.modal-video .modal-content .modal-body .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 100;
+}
+.modal-video .modal-content .modal-body iframe {
   width: 100%;
-  height: 100vh;
-  align-items: center;
+  border: 1px solid transparent;
+  height: 565px;
+}
+
+.header-black {
+  display: block;
+  width: 100%;
+  height: 130px;
   background: #000000;
 }
-.content-default h1 {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 5.3125rem;
+
+.area-page {
+  padding: 100px 0;
 }
 
 .main-header {
@@ -196,6 +220,10 @@ a, button {
 .front-page .banner-home {
   position: relative;
   min-height: 100vh;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 0px solid;
 }
 .front-page .banner-home video {
   position: absolute;
@@ -210,6 +238,7 @@ a, button {
   font-weight: 300;
   font-size: 5.3125rem;
   color: #ffffff;
+  text-align: left;
 }
 .front-page .contruir-marcas {
   min-height: 720px;
@@ -245,6 +274,7 @@ a, button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border: 0px solid;
 }
 .front-page .integrar {
   min-height: 720px;
@@ -277,7 +307,15 @@ a, button {
   font-weight: 200;
   line-height: 6.25rem;
 }
-.front-page .integrar .produtos .img-produto {
+.front-page .integrar .produtos a {
+  text-decoration: none;
+  transition: all 0.3s linear;
+  display: block;
+}
+.front-page .integrar .produtos a:hover {
+  opacity: 0.8;
+}
+.front-page .integrar .produtos a .img-produto {
   width: 100%;
   display: block;
   height: 340px;
@@ -315,15 +353,19 @@ a, button {
   text-align: center;
 }
 
-.comunicacao {
+.apresentacao {
   display: block;
   width: 100%;
 }
-.comunicacao .banner-comunicacao {
+.apresentacao .banner-apresentacao {
   position: relative;
   min-height: 100vh;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 0px solid;
 }
-.comunicacao .banner-comunicacao video {
+.apresentacao .banner-apresentacao video {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -331,42 +373,42 @@ a, button {
   min-height: 100%;
   z-index: -1;
 }
-.comunicacao .banner-comunicacao h1 {
+.apresentacao .banner-apresentacao h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 5.3125rem;
   color: #ffffff;
 }
-.comunicacao .back-blue {
+.apresentacao .back-blue {
   background: #ffffff;
 }
-.comunicacao .back-blue .content {
+.apresentacao .back-blue .content {
   width: 100%;
   height: 80px;
   background: #2c2e3a;
 }
-.comunicacao .gallery {
+.apresentacao .gallery {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-wrap: nowwrap;
   overflow: hidden;
 }
-.comunicacao .gallery .item-galerry {
+.apresentacao .gallery .item-galerry {
   transition: all 0.3s linear;
   height: 100vh;
 }
-.comunicacao .gallery .item-galerry video, .comunicacao .gallery .item-galerry img {
+.apresentacao .gallery .item-galerry video, .apresentacao .gallery .item-galerry img {
   height: 100%;
 }
-.comunicacao .gallery .item-galerry.active {
+.apresentacao .gallery .item-galerry.active {
   opacity: 1;
 }
-.comunicacao .area-videos {
+.apresentacao .area-videos {
   width: 100%;
   padding: 100px 0;
 }
-.comunicacao .area-videos button.item-video {
+.apresentacao .area-videos button.item-video {
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -382,10 +424,10 @@ a, button {
   border: 0px solid;
   outline: none;
 }
-.comunicacao .area-videos button.item-video:hover {
+.apresentacao .area-videos button.item-video:hover {
   opacity: 0.8 !important;
 }
-.comunicacao .area-videos button.item-video::before {
+.apresentacao .area-videos button.item-video::before {
   content: "";
   position: absolute;
   left: 0;
@@ -396,46 +438,21 @@ a, button {
   z-index: 5;
   opacity: 0.5;
 }
-.comunicacao .area-videos button.item-video .content {
+.apresentacao .area-videos button.item-video .content {
   z-index: 10;
   display: flex;
   align-items: center;
 }
-.comunicacao .area-videos button.item-video .content img {
+.apresentacao .area-videos button.item-video .content img {
   width: 40px;
   margin-right: 15px;
 }
-.comunicacao .area-videos button.item-video .content p {
+.apresentacao .area-videos button.item-video .content p {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1.125rem;
   color: #ffffff;
-}
-.comunicacao .modal-video .modal-dialog {
-  max-width: 1000px !important;
-}
-.comunicacao .modal-video .modal-content {
-  border: 0px solid;
-  border-radius: 0;
-  background: transparent;
-  height: fit-content;
-}
-.comunicacao .modal-video .modal-content .modal-body {
-  padding: 0;
-  position: relative;
-  background: transparent;
-  height: fit-content;
-}
-.comunicacao .modal-video .modal-content .modal-body .close {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  z-index: 100;
-}
-.comunicacao .modal-video .modal-content .modal-body video {
-  width: 100%;
-  border: 1px solid transparent;
 }
 
 footer {
