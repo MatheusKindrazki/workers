@@ -9,14 +9,19 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
       <h4 class="title-2 white mb-0">Let's talk.</h4>
       <div>
-        <img src="<?php the_field('logotipo', 'options') ?>" alt="logotipo">
+        <img src="<?php the_field('logotipo', 'options') ?>" alt="logotipo" class="logotipo">
       </div>
     </div>
     <p class="email"><?php the_field('e-mail', 'options') ?></p>
-    <div class="area-whats d-flex align-items-end">
-      <img src="<?php bloginfo('template_directory'); ?>/images/text-whats-2.png" alt="whatsapp">
-      <p><?php the_field('whatsapp', 'options') ?></p>
-    </div>
+    <?php if(get_field('whatsapp', 'options')): ?>
+      <div class="area-whats d-flex align-items-end">
+        <div class="text-whats d-flex flex-column align-items-center justify-content-center">
+          <i class="fab fa-whatsapp"></i>
+          <p>WhatsApp</p>
+        </div>
+        <p class="num"><?php the_field('whatsapp', 'options') ?></p>
+      </div>
+    <?php endif; ?>
     <div class="bottom-footer d-flex justify-content-between">
       <?php if( have_rows('redes_sociais', 'options') ): ?>
         <div class="redes d-flex">

@@ -5,14 +5,19 @@
 get_header(); ?>
 
 <div class="apresentacao">
-  <button type="button" class="banner-apresentacao d-flex align-items-center" data-toggle="modal" data-target="#modal-apresentacao">
-    <video autoplay muted loop>
-      <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
-    </video>
-    <div class="container d-flex justify-content-center">
-      <h1 class="gs_reveal gs_reveal_fromTop"> <?php the_field('titulo_banner'); ?> </h1>
-    </div>
-  </button>
+  <div class="area-banner">
+    <button type="button" class="banner-apresentacao d-flex align-items-center" data-toggle="modal" data-target="#modal-apresentacao">
+      <video autoplay muted loop>
+        <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
+      </video>
+      <div class="container d-flex justify-content-center">
+        <h1 class="gs_reveal gs_reveal_fromTop"> <?php the_field('titulo_banner'); ?> </h1>
+      </div>
+    </button>
+    <a href="#destaques" class="go-next ease-scroll">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
 
   <div class="modal modal-video fade" id="modal-apresentacao" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -25,7 +30,7 @@ get_header(); ?>
   </div>
 
   <?php if( have_rows('destaques') ): ?>
-    <div class="back-blue">
+    <div class="back-blue" id="destaques">
       <div class="container">
         <div class="content"></div>
       </div>

@@ -3,7 +3,7 @@
 <header class="main-header">
   <div class="content container d-flex align-items-center justify-content-between">
     <a href="<?php bloginfo('url') ?>" class="d-block">
-      <img src="<?php the_field('logotipo', 'options') ?>" alt="logotipo">
+      <img src="<?php the_field('logotipo', 'options') ?>" alt="logotipo" class="logotipo">
     </a>
     <button type="button">
       Menu <i class="fas fa-ellipsis-v"></i>
@@ -20,14 +20,19 @@
       </div>
 
       <?php wp_nav_menu(array('menu' => 'primary', 'items_wrap' => '<ol id="%1$s" class="%2$s">%3$s</ol>',)); ?>
-
-      <div class="whats-talk">
-        <p class="talk">Let's talk.</p>
-        <div class="area-number">
-          <p class="num"><?php the_field('whatsapp', 'options') ?></p>
-          <img src="<?php bloginfo('template_directory'); ?>/images/text-whats.png" alt="whatsapp">
+      
+      <?php if(get_field('whatsapp', 'options')): ?>
+        <div class="whats-talk">
+          <p class="talk">Let's talk.</p>
+          <div class="area-number">
+            <p class="num"><?php the_field('whatsapp', 'options') ?></p>
+            <div class="text-whats d-flex align-items-center">
+              <p>WhatsApp</p>
+              <i class="fab fa-whatsapp"></i>
+            </div>
+          </div>
         </div>
-      </div>
+      <?php endif; ?>
     </div>
   </div>
 </header>

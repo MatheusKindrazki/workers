@@ -166,6 +166,16 @@ const menuAction = () => {
 	})
 }
 
+const scrollEase = () => {
+	jQuery('a.ease-scroll').on('click', function(event){
+		event.preventDefault();
+		const hash = this.hash;
+		jQuery('html, body').animate({
+				scrollTop: jQuery(hash).offset().top
+		}, 500);
+	});
+}
+
 jQuery('document').ready(function(){
 	scrollToTop();
 	galleryAnimationScroll();
@@ -174,4 +184,5 @@ jQuery('document').ready(function(){
 	parallaxBackground();
 	actionsModal();
 	menuAction();
+	scrollEase();
 });

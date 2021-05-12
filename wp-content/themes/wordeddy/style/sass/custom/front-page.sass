@@ -1,24 +1,37 @@
 .front-page
-  .banner-home
+  .area-banner
     position: relative
-    min-height: 100vh
-    display: block
-    width: 100%
-    background: transparent
-    border: 0px solid
-    video
+    .go-next
       position: absolute
-      right: 0
-      bottom: 0
-      min-width: 100%
-      min-height: 100%
-      z-index: -1
-    h1
-      font-family: 'Poppins', sans-serif
-      font-weight: 300
-      font-size: calculateRem(85px)
+      z-index: 100
+      left: 50%
+      bottom: 20px
+      font-size: calculateRem(30px)
       color: $white
-      text-align: left
+      cursor: pointer
+      animation: jump 1s ease infinite
+    .banner-home
+      position: relative
+      min-height: 100vh
+      display: block
+      width: 100%
+      background: transparent
+      border: 0px solid
+      box-shadow: 50vw 0 200px 0 rgb(0 0 0 / 50%) inset
+      cursor: alias
+      video
+        position: absolute
+        right: 0
+        bottom: 0
+        min-width: 100%
+        min-height: 100%
+        z-index: -1
+      h1, h1 *
+        font-family: 'Poppins', sans-serif
+        font-weight: normal
+        font-size: calculateRem(85px)
+        color: $white
+        text-align: left
   .contruir-marcas
     min-height: 720px
     padding-top: 130px
@@ -66,7 +79,8 @@
         align-items: flex-end
         margin-bottom: 30px
         h3
-          font-weight: 200
+          font-family: 'Poppins', sans-serif
+          font-weight: normal
           font-size: calculateRem(12px)
           color: $white
         p
@@ -90,6 +104,8 @@
           background-size: cover
   .desvendar
     min-height: 720px
+    img.logotipo
+      width: 110px
     .content
       margin-top: 300px
   .session-four

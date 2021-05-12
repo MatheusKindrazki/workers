@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 body {
   background-color: #ffffff;
   padding: 0;
@@ -64,6 +75,9 @@ a, button {
   padding-right: 15px;
 }
 
+.modal-video {
+  background: rgba(0, 0, 0, 0.6);
+}
 .modal-video .modal-dialog {
   max-width: 1000px !important;
 }
@@ -110,6 +124,9 @@ a, button {
   padding-top: 50px;
   z-index: 10;
 }
+.main-header img.logotipo {
+  width: 110px;
+}
 .main-header .content button {
   background-color: transparent;
   color: #ffffff;
@@ -150,11 +167,11 @@ a, button {
   width: 100%;
   height: 100vh;
   border: 0px solid;
-  background-color: #000000;
+  background-color: #ffffff;
   opacity: 0.3;
 }
 .main-header .menu-open-modal .menu-open {
-  background: #ffffff;
+  background: #000000;
   padding: 50px;
   height: 100vh;
   min-width: 500px;
@@ -166,11 +183,11 @@ a, button {
 .main-header .menu-open-modal .menu-open .btn-close {
   background: transparent;
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
+  font-weight: normal;
   font-size: 1.125rem;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #ffffff;
   border: 0px solid;
   transition: all 0.3s linear;
 }
@@ -181,11 +198,21 @@ a, button {
   margin-left: 10px;
   font-size: 1.875rem;
 }
+.main-header .menu-open-modal .menu-open .whats-talk .text-whats * {
+  color: #ffffff;
+}
+.main-header .menu-open-modal .menu-open .whats-talk .text-whats p {
+  margin: 0;
+  margin-right: 10px;
+}
+.main-header .menu-open-modal .menu-open .whats-talk .text-whats i {
+  font-size: 1.25rem;
+}
 .main-header .menu-open-modal .menu-open .whats-talk .talk {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-size: 1rem;
-  color: #5f5f5f;
+  color: #ffffff;
 }
 .main-header .menu-open-modal .menu-open .whats-talk .area-number {
   padding-left: 30px;
@@ -194,6 +221,7 @@ a, button {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.875rem;
+  color: #ffffff;
 }
 .main-header #menu-header {
   margin: 100px 0;
@@ -204,12 +232,12 @@ a, button {
   padding-left: 15px;
 }
 .main-header #menu-header li::marker {
-  color: #5f5f5f;
+  color: #ffffff;
 }
 .main-header #menu-header li a {
   font-family: "Poppins", sans-serif;
   font-size: 1.875rem;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.2s linear;
 }
@@ -217,15 +245,30 @@ a, button {
   opacity: 0.5;
 }
 
-.front-page .banner-home {
+.front-page .area-banner {
+  position: relative;
+}
+.front-page .area-banner .go-next {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  bottom: 20px;
+  font-size: 1.875rem;
+  color: #ffffff;
+  cursor: pointer;
+  animation: jump 1s ease infinite;
+}
+.front-page .area-banner .banner-home {
   position: relative;
   min-height: 100vh;
   display: block;
   width: 100%;
   background: transparent;
   border: 0px solid;
+  box-shadow: 50vw 0 200px 0 rgba(0, 0, 0, 0.5) inset;
+  cursor: alias;
 }
-.front-page .banner-home video {
+.front-page .area-banner .banner-home video {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -233,9 +276,9 @@ a, button {
   min-height: 100%;
   z-index: -1;
 }
-.front-page .banner-home h1 {
+.front-page .area-banner .banner-home h1, .front-page .area-banner .banner-home h1 * {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 5.3125rem;
   color: #ffffff;
   text-align: left;
@@ -296,7 +339,8 @@ a, button {
   margin-bottom: 30px;
 }
 .front-page .integrar .produtos .title-item h3 {
-  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
   font-size: 0.75rem;
   color: #ffffff;
 }
@@ -325,6 +369,9 @@ a, button {
 }
 .front-page .desvendar {
   min-height: 720px;
+}
+.front-page .desvendar img.logotipo {
+  width: 110px;
 }
 .front-page .desvendar .content {
   margin-top: 300px;
@@ -357,7 +404,20 @@ a, button {
   display: block;
   width: 100%;
 }
-.apresentacao .banner-apresentacao {
+.apresentacao .area-banner {
+  position: relative;
+}
+.apresentacao .area-banner .go-next {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  bottom: 20px;
+  font-size: 1.875rem;
+  color: #ffffff;
+  cursor: pointer;
+  animation: jump 1s ease infinite;
+}
+.apresentacao .area-banner .banner-apresentacao {
   position: relative;
   min-height: 100vh;
   display: block;
@@ -365,7 +425,7 @@ a, button {
   background: transparent;
   border: 0px solid;
 }
-.apresentacao .banner-apresentacao video {
+.apresentacao .area-banner .banner-apresentacao video {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -373,7 +433,7 @@ a, button {
   min-height: 100%;
   z-index: -1;
 }
-.apresentacao .banner-apresentacao h1 {
+.apresentacao .area-banner .banner-apresentacao h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 5.3125rem;
@@ -459,6 +519,9 @@ footer {
   padding: 20px 0 50px;
   background-color: #2c2e3a;
 }
+footer img.logotipo {
+  width: 110px;
+}
 footer .btn-top {
   background-color: transparent;
   outline: none;
@@ -470,18 +533,32 @@ footer .btn-top img {
   margin-right: 10px;
 }
 footer .email {
+  margin-bottom: 40px;
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
 }
 footer .area-whats {
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
-footer .area-whats img {
+footer .area-whats .text-whats {
   margin-right: 30px;
 }
-footer .area-whats p {
+footer .area-whats .text-whats * {
+  color: #ffffff;
+}
+footer .area-whats .text-whats p {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+footer .area-whats .text-whats i {
+  font-size: 3.75rem;
+  margin-bottom: 10px;
+}
+footer .area-whats p.num {
   font-family: "Poppins", sans-serif;
   font-size: 2.25rem;
   line-height: 2.25rem;

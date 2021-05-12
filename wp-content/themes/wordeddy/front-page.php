@@ -2,14 +2,19 @@
 
 <div class="front-page">
 
-  <button type="button" class="banner-home d-flex align-items-center justify-content-start" data-toggle="modal" data-target="#modal-banner">
-    <video autoplay muted loop>
-      <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
-    </video>
-    <div class="container">
-      <h1 class="gs_reveal gs_reveal_fromLeft"> <?php the_field('titulo_banner'); ?> </h1>
-    </div>
-  </button>
+  <div class="area-banner">
+    <button type="button" class="banner-home d-flex align-items-center justify-content-start" data-toggle="modal" data-target="#modal-banner">
+      <video autoplay muted loop>
+        <source src="<?php the_field('video_banner'); ?>" type="video/mp4">
+      </video>
+      <div class="container">
+        <h1 class="gs_reveal gs_reveal_fromLeft"> <?php the_field('titulo_banner'); ?> </h1>
+      </div>
+    </button>
+    <a href="#session-two" class="go-next ease-scroll">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
 
   <div class="modal modal-video fade" id="modal-banner" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -21,7 +26,7 @@
     </div>
   </div>
 
-  <div class="contruir-marcas">
+  <div class="contruir-marcas" id="session-two">
     <div class="container">
       <h2 class="title-2 gs_reveal gs_reveal_fromLeft">
         <?php the_field('titulo_contruir'); ?>
@@ -82,15 +87,15 @@
 
   <div class="desvendar d-flex justify-content-center flex-column">
     <div class="container content gs_reveal gs_reveal_fromLeft">
-      <img src="<?php the_field('logotipo_secundaria', 'options') ?>" alt="logotipo" class="mb-4">
+      <img src="<?php the_field('logotipo_secundaria', 'options') ?>" alt="logotipo" class="mb-4 logotipo">
       <h3 class="title-3">
       <?php the_field('texto_terceira_sessao') ?>
       </h3>
     </div>
   </div>
 
-  <div class="parallax-back">
-    <div class="session-four bg" style="background-image: url(<?php the_field('imagem_quinta_sessao') ?>)"></div>
+  <div>
+    <div class="session-four" style="background-image: url(<?php the_field('imagem_quinta_sessao') ?>)"></div>
   </div>
 
   <?php if( have_rows('topicos_sexta_sessao') ): ?>
