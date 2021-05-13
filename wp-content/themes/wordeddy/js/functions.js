@@ -176,13 +176,23 @@ const scrollEase = () => {
 	});
 }
 
+const slider = () => {
+	jQuery('.slider').slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+}
+
 jQuery('document').ready(function(){
 	scrollToTop();
-	galleryAnimationScroll();
+	// galleryAnimationScroll();
 	hideShowAnimationScroll();
 	parallaxAnimationScroll();
 	parallaxBackground();
 	actionsModal();
 	menuAction();
 	scrollEase();
+	slider();
 });

@@ -23,38 +23,52 @@ get_header(); ?>
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
+          <button class="btn-close-modal" type="button" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
           <iframe src="<?php the_field('video_vimeo'); ?>" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
 
-  <?php if( have_rows('destaques') ): ?>
     <div class="back-blue" id="destaques">
       <div class="container">
         <div class="content"></div>
       </div>
     </div>
-    <div class="gallery">
-      <?php while( have_rows('destaques') ): the_row(); ?>
-        <div class="item-galerry">
-          <?php if(get_sub_field('arquivo')['type'] === 'video'): ?>
-            <video autoplay muted loop>
-              <source src="<?php echo get_sub_field('arquivo')['url']; ?>" type="video/mp4">
-            </video>
-          <?php endif; ?>
-          <?php if(get_sub_field('arquivo')['type'] === 'image'): ?>
-            <img src="<?php echo get_sub_field('arquivo')['url']; ?>" alt="photo">
-          <?php endif; ?>
-        </div>
-      <?php endwhile; ?>
-    </div>
-    <div class="back-blue">
+
+    <?php if(get_field('video_destaque')['type'] === 'video'): ?>
+      <video autoplay muted loop class="video-destaque">
+        <source src="<?php echo get_field('video_destaque')['url']; ?>" type="video/mp4">
+      </video>
+    <?php endif; ?>
+    <?php if(get_field('video_destaque')['type'] === 'image'): ?>
+      <img src="<?php echo get_field('video_destaque')['url']; ?>" alt="photo" class="imagem-destaque">
+    <?php endif; ?>
+
+    <?php if( have_rows('destaques') ): ?>
+      <div class="slider gallery">
+        <?php while( have_rows('destaques') ): the_row(); ?>
+          <div class="item-gallery">
+            <?php if(get_sub_field('arquivo')['type'] === 'video'): ?>
+              <video autoplay muted loop>
+                <source src="<?php echo get_sub_field('arquivo')['url']; ?>" type="video/mp4">
+              </video>
+            <?php endif; ?>
+            <?php if(get_sub_field('arquivo')['type'] === 'image'): ?>
+              <img src="<?php echo get_sub_field('arquivo')['url']; ?>" alt="photo">
+            <?php endif; ?>
+          </div>
+        <?php endwhile; ?>
+      </div>
+    <?php endif; ?>
+    
+    <div class="back-blue bottom">
       <div class="container">
         <div class="content"></div>
       </div>
     </div>
-  <?php endif; ?>
 
   <?php if( have_rows('videos') ): ?>
     <div class="area-videos">
@@ -79,6 +93,9 @@ get_header(); ?>
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-body">
+                <button class="btn-close-modal" type="button" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times"></i>
+                </button>
                 <iframe src="<?php the_sub_field('video'); ?>" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>

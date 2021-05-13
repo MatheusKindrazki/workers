@@ -93,6 +93,17 @@ a, button {
   background: transparent;
   height: fit-content;
 }
+.modal-video .modal-content .modal-body .btn-close-modal {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  background: transparent;
+  border: 0px solid;
+}
+.modal-video .modal-content .modal-body .btn-close-modal * {
+  color: #ffffff;
+  font-size: 1.5625rem;
+}
 .modal-video .modal-content .modal-body .close {
   position: absolute;
   right: 15px;
@@ -442,27 +453,86 @@ a, button {
 .apresentacao .back-blue {
   background: #ffffff;
 }
+.apresentacao .back-blue.bottom {
+  margin-top: -15px;
+}
 .apresentacao .back-blue .content {
   width: 100%;
   height: 80px;
   background: #2c2e3a;
 }
+.apresentacao .video-destaque, .apresentacao .imagem-destaque {
+  width: 100%;
+  display: block;
+}
 .apresentacao .gallery {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: nowwrap;
-  overflow: hidden;
+  position: relative;
 }
-.apresentacao .gallery .item-galerry {
+.apresentacao .gallery .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  font-size: 0rem;
+  width: 25px;
+  height: 45px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../images/arrow-slider.png");
+  border: 0px solid;
   transition: all 0.3s linear;
-  height: 100vh;
 }
-.apresentacao .gallery .item-galerry video, .apresentacao .gallery .item-galerry img {
-  height: 100%;
+.apresentacao .gallery .slick-arrow:hover {
+  opacity: 0.7;
 }
-.apresentacao .gallery .item-galerry.active {
+.apresentacao .gallery .slick-arrow.slick-prev {
+  left: 40px;
+  transform: rotate(180deg);
+}
+.apresentacao .gallery .slick-arrow.slick-next {
+  right: 40px;
+}
+.apresentacao .gallery ul.slick-dots {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+}
+.apresentacao .gallery ul.slick-dots li {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+.apresentacao .gallery ul.slick-dots li.slick-active button {
   opacity: 1;
+}
+.apresentacao .gallery ul.slick-dots li button {
+  margin: 0;
+  padding: 0;
+  font-size: 0rem;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 0px solid;
+  border-radius: 100px;
+  opacity: 0.5;
+  transition: all 0.3s linear;
+}
+.apresentacao .gallery .item-gallery .back-image-gallery {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1080px;
+  width: 100%;
+}
+.apresentacao .gallery .item-gallery video, .apresentacao .gallery .item-gallery img {
+  width: 100% !important;
 }
 .apresentacao .area-videos {
   width: 100%;

@@ -20,6 +20,9 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
+          <button class="btn-close-modal" type="button" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
           <iframe src="<?php the_field('video_vimeo'); ?>" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
@@ -48,6 +51,9 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-body">
+                <button class="btn-close-modal" type="button" data-dismiss="modal" aria-label="Close">
+                  <i class="fas fa-times"></i>
+                </button>
                 <iframe src="<?php the_sub_field('video'); ?>" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
