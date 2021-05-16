@@ -322,13 +322,21 @@ a, button {
   z-index: 10;
   transform: rotate(90deg);
 }
-.front-page .contruir-marcas .area-imagens .img-back {
+.front-page .contruir-marcas .area-imagens button.img-back {
   width: 50%;
   height: 650px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 0px solid;
+  padding: 0;
+}
+.front-page .contruir-marcas .area-imagens button.img-back.video {
+  overflow: hidden;
+}
+.front-page .contruir-marcas .area-imagens button.img-back.video video {
+  height: 100%;
+  transform: translateX(-25%);
 }
 .front-page .integrar {
   min-height: 720px;
@@ -370,6 +378,14 @@ a, button {
 .front-page .integrar .produtos a:hover {
   opacity: 0.8;
 }
+.front-page .integrar .produtos a.link-video {
+  overflow: hidden;
+  height: 340px;
+}
+.front-page .integrar .produtos a.link-video video {
+  height: 100%;
+  transform: translateX(-25%);
+}
 .front-page .integrar .produtos a .img-produto {
   width: 100%;
   display: block;
@@ -404,6 +420,13 @@ a, button {
   background-position: center;
   background-size: cover;
   margin-bottom: 30px;
+}
+.front-page .session-five .img-back.video {
+  overflow: hidden;
+}
+.front-page .session-five .img-back.video video {
+  height: 100%;
+  transform: translateX(-25%);
 }
 .front-page .session-five p {
   font-family: "Poppins", sans-serif;

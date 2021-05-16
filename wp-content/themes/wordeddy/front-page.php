@@ -38,8 +38,19 @@
       <?php if( have_rows('cases_segunda_sessao') ): ?>
         <div class="d-flex area-imagens">
           <?php $cont = 0; while( have_rows('cases_segunda_sessao') ): the_row(); ?>
-              <button type="button" class="img-back gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" style="background-image: url(<?php the_sub_field('imagem'); ?>)" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>"></button>
-              <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
+
+            <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
+              <button type="button" class="img-back video gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>">
+                <video autoplay muted loop>
+                  <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
+                </video>
+              </button>
+            <?php endif; ?>
+            <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
+              <button type="button" class="img-back gs_reveal <?php echo $cont === 0 ? 'gs_reveal_fromBottom' : 'gs_reveal_fromTop'?>" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)" data-toggle="modal" data-target="#modal-case-<?php echo $cont ?>"></button>
+            <?php endif; ?>
+
+            <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
           <?php $cont++; endwhile; ?>
         </div>
       <?php endif; ?>
@@ -80,9 +91,19 @@
                 <h3><?php echo get_sub_field('link')['title']; ?></h3>
                 <p>0<?php echo $cont; ?>.</p>
               </div>
-              <a href="<?php echo get_sub_field('link')['url']; ?>">
-                <div class="img-produto" style="background-image: url(<?php the_sub_field('imagem') ?>)"></div>
-              </a>
+
+              <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
+                <a href="<?php echo get_sub_field('link')['url']; ?>" class="link-video">
+                  <video autoplay muted loop>
+                    <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
+                  </video>
+                </a>
+              <?php endif; ?>
+              <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
+                <a href="<?php echo get_sub_field('link')['url']; ?>">
+                  <div class="img-produto" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)"></div>
+                </a>
+              <?php endif; ?>
             </div>
             <?php $cont++; endwhile; ?>
           </div>
@@ -109,10 +130,22 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <?php $cont = 0; while( have_rows('topicos_sexta_sessao') ): the_row(); ?>
-            <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
-              <div class="img-back" style="background-image: url(<?php the_sub_field('imagem'); ?>)"></div>
-              <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
-            </div>
+            <?php if(get_sub_field('arquivo_animado')['type'] === 'video'): ?>
+              <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
+                <div class="img-back video">
+                  <video autoplay muted loop>
+                    <source src="<?php echo get_sub_field('arquivo_animado')['url']; ?>" type="video/mp4">
+                  </video>
+                </div>
+                <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
+              </div>
+            <?php endif; ?>
+            <?php if(get_sub_field('arquivo_animado')['type'] === 'image'): ?>
+              <div class="col-lg-4 gs_reveal <?php echo $cont % 2 === 0 ? 'gs_reveal_fromTop' : 'gs_reveal_fromBottom'?>">
+                <div class="img-back" style="background-image: url(<?php echo get_sub_field('arquivo_animado')['url']; ?>)"></div>
+                <p class="<?php echo $cont === 0 ? 'title-image-left' : 'title-image-right'; ?>"><?php the_sub_field('titulo'); ?></p>
+              </div>
+            <?php endif; ?>
           <?php $cont++; endwhile; ?>
         </div>
       </div>

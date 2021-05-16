@@ -55,13 +55,19 @@
         top: 100px
         z-index: 10
         transform: rotate(90deg)
-      .img-back
+      button.img-back
         width: 50%
         height: 650px
         background-repeat: no-repeat
         background-position: center
         background-size: cover
         border: 0px solid
+        padding: 0
+        &.video
+          overflow: hidden
+          video
+            height: 100%
+            transform: translateX(-25%)
   .integrar
     min-height: 720px
     background: $blue
@@ -95,6 +101,12 @@
         display: block
         &:hover
           opacity: 0.8
+        &.link-video
+          overflow: hidden
+          height: 340px
+          video
+            height: 100%
+            transform: translateX(-25%)
         .img-produto
           width: 100%
           display: block
@@ -123,6 +135,11 @@
       background-position: center
       background-size: cover
       margin-bottom: 30px
+      &.video
+        overflow: hidden
+        video
+          height: 100%
+          transform: translateX(-25%)
     p
       font-family: 'Poppins', sans-serif
       font-size: calculateRem(30px)
