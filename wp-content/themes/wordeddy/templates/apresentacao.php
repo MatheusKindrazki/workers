@@ -66,7 +66,7 @@ get_header(); ?>
     
     <div class="back-blue bottom">
       <div class="container">
-        <div class="content"></div>
+        <div class="content big"></div>
       </div>
     </div>
 

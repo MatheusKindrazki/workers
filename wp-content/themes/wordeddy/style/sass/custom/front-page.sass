@@ -28,7 +28,7 @@
         z-index: -1
       h1, h1 *
         font-family: 'Poppins', sans-serif
-        font-weight: normal
+        font-weight: 300
         font-size: calculateRem(85px)
         color: $white
         text-align: left
@@ -65,9 +65,13 @@
         padding: 0
         &.video
           overflow: hidden
+          position: relative
           video
             height: 100%
-            transform: translateX(-25%)
+            transform: translateX(-50%)
+            position: absolute
+            left: 50%
+            bottom: 0
   .integrar
     min-height: 720px
     background: $blue
@@ -104,9 +108,13 @@
         &.link-video
           overflow: hidden
           height: 340px
+          position: relative
           video
             height: 100%
-            transform: translateX(-25%)
+            transform: translateX(-50%)
+            position: absolute
+            left: 50%
+            bottom: 0
         .img-produto
           width: 100%
           display: block

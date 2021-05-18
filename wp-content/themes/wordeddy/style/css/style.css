@@ -289,7 +289,7 @@ a, button {
 }
 .front-page .area-banner .banner-home h1, .front-page .area-banner .banner-home h1 * {
   font-family: "Poppins", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 5.3125rem;
   color: #ffffff;
   text-align: left;
@@ -333,10 +333,14 @@ a, button {
 }
 .front-page .contruir-marcas .area-imagens button.img-back.video {
   overflow: hidden;
+  position: relative;
 }
 .front-page .contruir-marcas .area-imagens button.img-back.video video {
   height: 100%;
-  transform: translateX(-25%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
 }
 .front-page .integrar {
   min-height: 720px;
@@ -381,10 +385,14 @@ a, button {
 .front-page .integrar .produtos a.link-video {
   overflow: hidden;
   height: 340px;
+  position: relative;
 }
 .front-page .integrar .produtos a.link-video video {
   height: 100%;
-  transform: translateX(-25%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
 }
 .front-page .integrar .produtos a .img-produto {
   width: 100%;
@@ -477,12 +485,15 @@ a, button {
   background: #ffffff;
 }
 .apresentacao .back-blue.bottom {
-  margin-top: -15px;
+  margin-top: -80px;
 }
 .apresentacao .back-blue .content {
   width: 100%;
   height: 80px;
   background: #2c2e3a;
+}
+.apresentacao .back-blue .content.big {
+  height: 160px;
 }
 .apresentacao .video-destaque, .apresentacao .imagem-destaque {
   width: 100%;
@@ -525,7 +536,7 @@ a, button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 35px;
+  bottom: 50px;
 }
 .apresentacao .gallery ul.slick-dots li {
   margin: 0;
@@ -539,8 +550,8 @@ a, button {
   margin: 0;
   padding: 0;
   font-size: 0rem;
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   background: #ffffff;
   border: 0px solid;
   border-radius: 100px;
